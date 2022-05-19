@@ -1,0 +1,115 @@
+<html lang="pt-BR">
+
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carrinho | Softgraf</title>
+
+   <link rel="stylesheet" href="styles.css">
+
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet">
+
+   <!-- <style>
+        body {
+            background: blue
+        }
+    </style> -->
+</head>
+
+<body>
+   <h1 style="margin-bottom: 30px">CARRINHO</h1>
+   <div class="container">
+      <div class="products">
+         <h1>Produtos</h1>
+         <div class="product">
+            <img width="133" src="./assets/apple-watch.png" alt="Relógio Apple Watch series 7 com GPS" />
+            <div class="information">
+               <h2 class="mb-10">Apple Watch series 7 (GPS)</h2>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, harum? Minima placeat quas incidunt
+                  in commodi modi sint enim. Fuga soluta consequatur ducimus dicta, cumque repellendus explicabo
+                  voluptas nobis iste?</p>
+
+               <p class="valor">
+                  <span>R$</span> 3000,00
+               </p>
+            </div>
+
+            <div class="actions">
+               <button class="subtract">-</button>
+               <div>
+                  <label>quantidade</label>
+                  <input type="number" value="1" disabled>
+               </div>
+               <button class="increase">+</button>
+            </div>
+
+         </div>
+
+         <div class="product">
+            <img width="133" src="./assets/iphone13.png" alt="iPhone 13" />
+            <div class="information">
+               <h2 class="mb-10">iPhone 13 Apple (128GB)</h2>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, harum? Minima placeat quas incidunt
+                  in commodi modi sint enim. Fuga soluta consequatur ducimus dicta, cumque repellendus explicabo
+                  voluptas nobis iste?</p>
+
+               <p class="valor">
+                  <span>R$</span> 4000,00
+               </p>
+            </div>
+
+            <div class="actions">
+               <button class="subtract">-</button>
+               <div>
+                  <label>quantidade</label>
+                  <input type="number" value="1" disabled>
+               </div>
+               <button class="increase">+</button>
+            </div>
+
+         </div>
+      </div>
+
+      <div class="order">
+         <div class="search-frete">
+            <h2 class="title">Calcular frete</h2>
+            <input class="cep-input" maxlength="8" placeholder="CEP">
+            <p class="address">empty</p>
+         </div>
+
+         <div class="information">
+            <h2 class="title">Resumo do pedido</h2>
+            <div class="row">
+               <div class="left">
+                  <p class="mb-10">2 produtos</p>
+                  <b>frete</b>
+               </div>
+               <div class="right">
+                  <p class="mb-10">R$ 7000,00</p>
+                  <p class="value-frete">-</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="total">
+            <h2>Total</h2>
+            <h3>R$ 7030,00</h3>
+         </div>
+
+         <button class="button" type="button">
+            Finalizar compra
+         </button>
+      </div>
+   </div>
+
+   <img src="./assets/logo.svg" alt="Logo Softgraf" width="200" style="margin-top: 30px">
+
+</body>
+
+</html>
