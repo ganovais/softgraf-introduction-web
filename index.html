@@ -10,7 +10,6 @@
    <title>Carrinho | Softgraf</title>
 
    <link rel="stylesheet" href="styles.css">
-
    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&family=Ubuntu+Condensed&display=swap"
       rel="stylesheet">
@@ -27,7 +26,7 @@
    <div class="container">
       <div class="products">
          <h1>Produtos</h1>
-         <div class="product">
+         <div class="product" id="main-product-1">
             <img width="133" src="./assets/apple-watch.png" alt="Relógio Apple Watch series 7 com GPS" />
             <div class="information">
                <h2 class="mb-10">Apple Watch series 7 (GPS)</h2>
@@ -41,17 +40,17 @@
             </div>
 
             <div class="actions">
-               <button class="subtract">-</button>
+               <button data-product="1" class="subtract">-</button>
                <div>
                   <label>quantidade</label>
-                  <input type="number" value="1" disabled>
+                  <input id="product-1" type="number" value="1" disabled>
                </div>
-               <button class="increase">+</button>
+               <button data-product="1" class="increase">+</button>
             </div>
 
          </div>
 
-         <div class="product">
+         <div class="product" id="main-product-2">
             <img width="133" src="./assets/iphone13.png" alt="iPhone 13" />
             <div class="information">
                <h2 class="mb-10">iPhone 13 Apple (128GB)</h2>
@@ -65,12 +64,12 @@
             </div>
 
             <div class="actions">
-               <button class="subtract">-</button>
+               <button data-product="2" class="subtract">-</button>
                <div>
                   <label>quantidade</label>
-                  <input type="number" value="1" disabled>
+                  <input id="product-2" type="number" value="1" disabled>
                </div>
-               <button class="increase">+</button>
+               <button data-product="2" class="increase">+</button>
             </div>
 
          </div>
@@ -109,6 +108,8 @@
    </div>
 
    <img src="./assets/logo.svg" alt="Logo Softgraf" width="200" style="margin-top: 30px">
+
+   <script src="./scripts.js"></script>
 
 </body>
 

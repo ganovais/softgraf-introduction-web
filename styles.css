@@ -108,3 +108,78 @@ id = #
    background: #ebebeb;
    text-align: center;
 }
+
+.order {
+   width: 300px;
+   padding-left: 30px;
+   border-left: 1px solid #ccc;
+   margin-left: 50px;
+}
+
+.search-frete {
+   margin-bottom: 50px;
+}
+
+.search-frete > .address {
+   display: none;
+   margin-top: 10px;
+   font-size: 1rem;
+   font-weight: 700;
+   color: #588157;
+}
+
+.cep-input {
+   height: 40px;
+   border-radius: 10px;
+   border: none;
+   background: #ebebeb;
+   padding: 0 20px;
+   width: 100%;
+   color: #525252;
+   letter-spacing: 2px;
+}
+
+.cep-input:focus {
+   outline: none;
+   border: 1px solid #588157;
+}
+
+.order > .information {
+   margin-bottom: 50px;
+}
+
+.title {
+   margin-bottom: 10px;
+}
+
+.row {
+   display: flex;
+}
+
+.left {
+   flex: 1;
+}
+
+.total {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.total > h3 {
+   color: #006d77;
+}
+
+.button {
+   margin-top: 50px;
+   border-radius: 4px;
+   width: 100%;
+   background: #588157;
+   height: 40px;
+   border: none;
+   cursor: pointer;
+   color: #fff;
+}
+/* media query css */
+/* Bootstrap - Biblioteca CSS */
+/* Font Awesome - Biblioteca CSS que adiciona icones */
