@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de crédito</title>
+
+    <link rel="stylesheet" href="styles.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&family=Ubuntu+Condensed&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-front card-part">
+            <p class="card-number">**** **** **** 1234</p>
+            <div class="card-space-75">
+                <span class="card-label">Nome no cartão</span>
+                <p class="card-info name">John Doe</p>
+            </div>
+            <div class="card-space-25">
+                <span class="card-label">Validade</span>
+                <p class="card-info expire-date">10/25</p>
+            </div>
+        </div>
+
+        <div class="card-back card-part">
+            <div class="card-black-line"></div>
+            <div class="card-back-content">
+                <div class="card-secret">
+                    <p class="card-secret-last security-number">420</p>
+                </div>
+                <p style="color: #fff; margin-top: 20px">Código de segurança</p>
+            </div>
+        </div>
+    </div>
+
+    <form class="form" autocomplete="off">
+        <div class="form-group">
+            <label>Nome</label>
+            <input id="name" class="input" placeholder="Nome">
+        </div>
+
+        <div class="form-group">
+            <label>Número do cartão</label>
+            <input id="card_number" class="input" placeholder="1234 1234 1234 1234">
+        </div>
+
+        <div class="row">
+            <div class="form-group mr-20">
+                <label>Data Validade</label>
+                <input id="expire_date" class="input" maxlength="5" placeholder="10/25">
+            </div>
+
+            <div class="form-group">
+                <label>Código de segurança</label>
+                <input id="security_number" class="input" maxlength="3" placeholder="420">
+            </div>
+        </div>
+
+        <button class="button" type="button">Finalizar</button>
+    </form>
+
+    <img src="logo.svg" alt="Logo Softgraf" width="200">
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
